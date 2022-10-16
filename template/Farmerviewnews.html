@@ -1,0 +1,70 @@
+{% extends 'farmerbase.html'%}
+{% load static %}
+
+{% block content %}
+<!-- contact -->
+<div class="contact">
+    <div class="container">
+            <h3 class="w3l_head w3l_head1">News</h3>
+            <p class="w3ls_head_para w3ls_head_para1"></p>
+        <div class="w3_contact_grids" style="margin-left: 200px;">
+            <form action="#" method="post">
+                {% csrf_token %}
+                
+                <table class="table table-bordered">
+                    <tr style="background-color:Green;font:bolder;">
+               
+                <th>Title</th>
+                <th>News</th>
+                <th>Date</th>
+            </tr>
+            {% for d in data %}
+            <tr>
+                
+                <td>{{d.title}}</td>
+                <td>{{d.news}}</td>
+                <td>{{d.date}}</td>
+            </tr>
+            {% endfor %}
+               </table> 
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/classie.js"></script>
+<script>
+        (function() {
+            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+            if (!String.prototype.trim) {
+                (function() {
+                    // Make sure we trim BOM and NBSP
+                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                    String.prototype.trim = function() {
+                        return this.replace(rtrim, '');
+                    };
+                })();
+            }
+
+            [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+                // in case the input is already filled..
+                if( inputEl.value.trim() !== '' ) {
+                    classie.add( inputEl.parentNode, 'input--filled' );
+                }
+
+                // events:
+                inputEl.addEventListener( 'focus', onInputFocus );
+                inputEl.addEventListener( 'blur', onInputBlur );
+            } );
+
+            function onInputFocus( ev ) {
+                classie.add( ev.target.parentNode, 'input--filled' );
+            }
+
+            function onInputBlur( ev ) {
+                if( ev.target.value.trim() === '' ) {
+                    classie.remove( ev.target.parentNode, 'input--filled' );
+                }
+            }
+        })();
+    </script>
+{% endblock %}

@@ -1,0 +1,465 @@
+
+
+
+{% load static %}
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FARMTECH</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Floriculture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- pop-up-box -->
+<link href="{% static 'css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up-box -->
+<!-- font-awesome icons -->
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+	<div class="w3_agileits_nav">
+	<div class="container">
+				<div class="w3ls-nav">
+					<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a class="active" href="">Home</a></li>
+								<li><a href="/login">Login</a></li>
+								<li><a href="/registration" >Farmer registration</a></li>
+								<!-- <li><a href="gallery.html" >Gallery</a></li>	 -->
+								<!-- <li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
+										<ul class="dropdown-menu agile_short_dropdown">
+											<li><a href="icons.html">Icons</a></li>
+										<li><a href="typography.html">Typography</a></li>
+										</ul>
+								</li> -->
+								<!-- <li><a href="contact.html">Contact</a></li> -->
+							</ul>
+							<div class="clearfix"> </div>							
+						</div>	
+					</nav>		
+			</div>
+
+			</div>
+		</div>
+		<div class="container">
+			
+			<div class="agile_header_grid">
+				<div class="w3_agile_logo">
+				</div>
+				<!-- <div class="agileits_w3layouts_sign_in">
+					<ul>
+						
+						<li><div class="agileinfo_search">
+								<form action="#" method="post">
+									<input type="text" name="Search" placeholder="Type text here..." required="">
+									<input type="submit" value=" ">
+								</form>
+							</div></li>
+							<li><a href="#small-dialog" class="play-icon popup-with-zoom-anim">Sign In</a></li>
+					</ul>
+				</div> -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- pop-up-box -->
+	<div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3 class="agileinfo_sign">Sign In</h3>	
+		<div class="agileits_signin_form">
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your Email" required="">
+				<input type="password" name="password" placeholder="Password" required="">
+				<div class="agile_remember">
+					<div class="agile_remember_left">
+						<div class="check">
+							<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>remember me</label>
+						</div>
+					</div>
+					<div class="agile_remember_right">
+						<a href="#">Forgot Password?</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<input type="submit" value="SIGN IN">
+				<p>Don't have an account <a href="#small-dialog1" class="play-icon popup-with-zoom-anim">Sign Up</a></p>
+				<div class="w3agile_social_icons">
+					<ul>
+						<li class="wthree_follow">Follow us on :</li>
+						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					</ul>	
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3 class="agileinfo_sign">Sign Up</h3>	
+		<div class="agileits_signin_form">
+			<form action="#" method="post">
+				<input type="text" name="name" placeholder="First Name" required="">
+				<input type="text" name="name" placeholder="Last Name" required="">
+				<input type="email" name="email" placeholder="Your Email" required="">
+				<input type="password" name="password" placeholder="Password" required="">
+				<input type="password" name="password" placeholder="Confirm Password" required="">
+				<input type="submit" value="SIGN UP">
+				<p>Already a member <a href="#small-dialog" class="play-icon popup-with-zoom-anim">Sign In</a></p>
+				<div class="w3agile_social_icons">
+					<ul>
+						<li class="wthree_follow">Follow us on :</li>
+						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					</ul>	
+				</div>
+			</form>
+		</div>
+	</div>
+<!-- //pop-up-box -->	
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+																	
+	});
+</script>
+<!-- banner -->	
+	<div class="banner">
+		<style>
+			* {
+			  margin: 0;
+			  padding: 0;
+			  box-sizing: border-box;
+			}
+			
+			.containers {
+			  height: 10rem;
+			  /* background: transparent; */
+			  width: 15rem;
+			  /* background-color: rgba(0, 0, 0,0.235); */
+			  text-align: center;
+			  padding-top: 12px;
+			  color:white;
+			  font-weight: bolder;
+			  border-radius: 16px;
+			  /* border: 2px solid rgb(14, 43, 1); */
+			}
+		  </style>
+
+		  <div class="containers">
+      <!-- <div class="icon">---</div> -->
+      <div class="temp">-°C</div>
+      <div class="summary">----</div>
+      <div class="location"></div>
+    </div>
+    <!--Linking the javascript code-->
+    <script src="static/js/scripts.js"></script>
+		<!-- <div class="container">
+			<h3>Flowers come in a variety of colours, with shades ranging </h3>
+			
+			<div class="wthree_banner_grids">
+				<div class="col-md-3 wthree_banner_grid">
+					<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+					<h4>Corporis</h4>
+				</div>
+				<div class="col-md-3 wthree_banner_grid">
+					<span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+					<h4>Suscipit</h4>
+				</div>
+				<div class="col-md-3 wthree_banner_grid">
+					<span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+					<h4>Laboriosam</h4>
+				</div>
+				<div class="col-md-3 wthree_banner_grid">
+					<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+					<h4>Voluptate</h4>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="agileits_more">
+				<ul>
+					
+					<li><a href="#" class="hvr-icon-hang" data-toggle="modal" data-target="#myModal">Read More</a></li>
+				</ul>
+			</div>
+		</div> -->
+		<div style="width:100%">
+		<marquee behavior="" direction="">
+			{% for d in data %}
+			<label for="" style="color: white;">Title:{{d.title}}  News:{{d.news}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			{% endfor %}
+		</marquee>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					farmtech					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<img src="images/g9.jpg" alt=" " class="img-responsive" />
+						<p>Ut enim ad minima veniam, quis nostrum 
+							exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem 
+							vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam nihil molestiae consequatur, vel illum qui 
+							dolorem eum fugiat quo voluptas nulla pariatur.
+							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+								esse quam nihil molestiae consequatur.</i></p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<div class="about">
+		<div class="container">
+			<div class="col-md-4 agileits_about_left">
+				<h3 class="w3l_head">About Us</h3>
+				<p class="w3ls_head_para w3ls_head_para1">FARM TECH</p>
+			</div>
+			<div class="col-md-8 agileits_about_right">
+				<p>Agriculture is the backbone of the Indian Economy"- said Mahatma Gandhi six decades ago. Even today, the situation is still the same, with almost the entire economy being sustained by agriculture, which is the mainstay of the villages. It contributes 16% of the overall GDP and accounts for employment of approximately 52% of the Indian population. Rapid growth in agriculture is essential not only for self-reliance but also to earn valuable foreign exchange. <i>Indian farmers are second to none in production and productivity despite of the fact that millions are marginal and small farmers. They adopt improved agriculture technology as efficiently as farmers in developed countries. It is felt that with provision of timely and adequate inputs such as fertilizers, seeds, pesticides and by making available affordable agricultural credit /crop insurance, Indian farmers are going to ensure food and nutritional security to the Nation.</i></p>
+				<ul>
+					<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>A decision for nature.</li>
+					<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Adding Green to your Life.</li>
+					<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Be Today. Be Nature.</li>
+					<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Clean, Green, Farming Machines.</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--services-->
+	<div class="services">
+		<!-- <div class="container">
+				<h3 class="w3l_head w3l_head1">Services</h3>
+			<p class="w3ls_head_para w3ls_head_para1">farmtech</p>
+			<div class="service-row">
+				<div class="col-md-4 col-sm-4 service-gds service-gd1">
+					<div class="bott-img">
+						<div class="icon-holder">
+							<i class="fa fa-scissors" aria-hidden="true"></i>	
+						</div>
+						<h4 class="mission">Accusantium</h4>
+						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 service-gds service-gd2">
+					<div class="bott-img">
+						<div class="icon-holder">
+							<i class="fa fa-link" aria-hidden="true"></i>
+						</div>
+						<h4 class="mission">Consequatur</h4>
+						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 service-gds service-gd3">
+					<div class="bott-img">
+						<div class="icon-holder">
+							<i class="fa fa-modx" aria-hidden="true"></i>
+						</div>
+						<h4 class="mission">Reprehenderit</h4>
+						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 service-gds service-gd4">
+					<div class="bott-img">
+						<div class="icon-holder">
+							<i class="fa fa-arrows" aria-hidden="true"></i>
+						</div>
+						<h4 class="mission">Miruestno</h4>
+						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 service-gds service-gd5">
+					<div class="bott-img">
+						<div class="icon-holder">
+							<i class="fa fa-cog" aria-hidden="true"></i>
+						</div>
+						<h4 class="mission">Claritasest </h4>
+						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 service-gds service-gd6">
+					<div class="bott-img">
+						<div class="icon-holder">
+							<i class="fa fa-random" aria-hidden="true"></i>
+						</div>
+						<h4 class="mission">Processus</h4>
+						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>				
+			</div>
+		</div>
+	</div> -->
+	<!--//services-->
+	<!-- features -->
+<!-- <div class="features">
+		<div class="container">
+				<h3 class="w3l_head w3l_head1">Features</h3>
+			<p class="w3ls_head_para w3ls_head_para1">quam ultrices</p>
+				<div class="w3_agile_features_grids">
+				<div class="col-md-3 w3_agile_features_grid">
+					<div class="ih-item circle effect1 agile_features_grid">
+						<div class="spinner"></div>
+						<div class="img"><img src="images/1.jpg" alt=" " class="img-responsive"></div>
+					</div>
+					<fieldset>
+						<legend>Pharetra</legend>
+							Donec ullamcorper ipsum quis turpis scelerisque, efficitur scelerisque urna pharetra.
+					</fieldset>
+				</div>
+				<div class="col-md-3 w3_agile_features_grid">
+					<div class="ih-item circle effect1 agile_features_grid">
+						<div class="spinner"></div>
+						<div class="img"><img src="images/4.jpg" alt=" " class="img-responsive"></div>
+					</div>
+					<fieldset>
+						<legend>Efficitur</legend>
+							Donec ullamcorper ipsum quis turpis scelerisque, efficitur scelerisque urna pharetra.
+					</fieldset>
+				</div>
+				<div class="col-md-3 w3_agile_features_grid">
+					<div class="ih-item circle effect1 agile_features_grid">
+						<div class="spinner"></div>
+						<div class="img"><img src="images/2.jpg" alt=" " class="img-responsive"></div>
+					</div>
+					<fieldset>
+						<legend>Scelerisque</legend>
+							Donec ullamcorper ipsum quis turpis scelerisque, efficitur scelerisque urna pharetra.
+					</fieldset>
+				</div>
+				<div class="col-md-3 w3_agile_features_grid">
+					<div class="ih-item circle effect1 agile_features_grid">
+						<div class="spinner"></div>
+						<div class="img"><img src="images/3.jpg" alt=" " class="img-responsive"></div>
+					</div>
+					<fieldset>
+						<legend>Ullamcorper</legend>
+							Donec ullamcorper ipsum quis turpis scelerisque, efficitur scelerisque urna pharetra.
+					</fieldset>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div> -->
+<!-- //features -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">FARMTECH</a></h2>
+			
+			<div class="agileits_w3layouts_nav_right">
+					<ul>
+						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			<!-- <form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form> -->
+			<div class="agileits_w3layouts_nav">
+				<div class="agileits_w3layouts_nav_left">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="icons.html">Icons</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<!-- <li><a href="contact.html">Contact</a></li> -->
+					</ul>
+				</div>
+				<h3>HelpLine<br>(+91)8592054437</h3>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2022 FARMTECH. All rights reserved </p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
+
